@@ -1,0 +1,7 @@
+_*.html
+_*.png
+_*.jpg
+_frame_*.html
+.DS_Store
+Thumbs.db
+
