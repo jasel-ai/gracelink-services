@@ -1564,7 +1564,7 @@ button {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  grid-template-columns: 1.2fr 1fr 1fr;
   gap: 60px;
   padding: 69px 0 54px;
   align-items: start;
@@ -1612,8 +1612,13 @@ button {
 }
 
 .footer-explore {
-  justify-self: end;
+  justify-self: center;
   min-width: 200px;
+}
+
+.footer-contact {
+  justify-self: end;
+  min-width: 220px;
 }
 
 .footer-column h3 {
@@ -1637,7 +1642,7 @@ button {
   color: var(--white);
 }
 
-/* .footer-contact a {
+.footer-contact a {
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -1647,10 +1652,10 @@ button {
 
 .footer-contact a span {
   color: #9eacbf;
-  font-size: 8px;
+  font-size: 11px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-} */
+}
 
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1703,7 +1708,8 @@ button {
     text-align: left;
   }
 
-  .footer-column.footer-explore {
+  .footer-column.footer-explore,
+  .footer-column.footer-contact {
     justify-self: start;
     align-self: start;
     width: 100%;
@@ -1714,7 +1720,9 @@ button {
   }
 
   .footer-column.footer-explore a,
-  .footer-column.footer-explore h3 {
+  .footer-column.footer-explore h3,
+  .footer-column.footer-contact a,
+  .footer-column.footer-contact h3 {
     width: 100%;
     text-align: left;
   }
@@ -2021,6 +2029,11 @@ button {
 
   .footer-brand {
     grid-column: span 2;
+  }
+
+  .footer-explore,
+  .footer-contact {
+    justify-self: start;
   }
 }
 
